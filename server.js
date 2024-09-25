@@ -6,12 +6,33 @@ import authRouter from "./Routers/authRouter.js";
 import errorHandlerMiddleware from "./Middleware/errorHandlerMiddleware.js";
 import { StatusCodes } from "http-status-codes";
 import gameRouter from "./Routers/gameRouter.js";
+// import { authenticateUser } from "./middleware/authMiddleware.js";
 import userRouter from "./Routers/userRouter.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
+import { verifyJWT } from "./utils/tokenUtils.js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+const authenticateUser = (req, res, next) => {
+  if (req.path === "/") {
+    return next();
+  }
+
+  const token = req.cookies?.token;
+
+  if (!token) {
+    return next();
+  }
+
+  try {
+    const { userId, role } = verifyJWT(token);
+    req.user = { userId, role };
+    next();
+  } catch (error) {
+    return next();
+  }
+};
 
 // Define __dirname first
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -33,8 +54,8 @@ app.post("/", (req, res) => {
   res.json({ message: "Data received", data: req.body });
 });
 app.use("/api/v1/auth", authRouter);
-app.use("/api/v1/games", gameRouter);
-app.use("/api/v1/users", userRouter);
+app.use("/api/v1/games", authenticateUser, gameRouter);
+app.use("/api/v1/users", authenticateUser, userRouter);
 
 // Static files
 app.use(express.static(path.resolve(__dirname, "./Public")));
