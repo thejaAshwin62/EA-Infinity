@@ -1,19 +1,33 @@
 import {
   BadRequestError,
-  UnauthenticatedError,
-  UnauthorizedError,
 } from "../errors/customErrors.js";
 import { verifyJWT } from "../utils/tokenUtils.js";
 
 export const authenticateUser = (req, res, next) => {
+  // Allow access without authentication for the root route
+  if (req.path === "/") {
+    return next();
+  }
+
   const token = req.cookies?.token; // Safely access token from cookies
-  if (!token) throw new UnauthenticatedError("Authentication invalid");
+
+  // If no token is present and the request is not for the root route
+  if (!token) {
+    // Uncomment the line below if you want to return a response instead of throwing an error
+    // return res.status(401).json({ message: "Authentication invalid" });
+
+    // If you want to ensure no error is thrown for `/`, just call next here instead of throwing an error
+    return next();
+  }
+
   try {
     const { userId, role } = verifyJWT(token);
     req.user = { userId, role };
     next();
   } catch (error) {
-    throw new UnauthenticatedError("Authentication invalid");
+    // Handle JWT verification errors
+    // Again, do not throw error for the root route
+    return next();
   }
 };
 
