@@ -37,11 +37,11 @@ app.use("/api/v1/games", gameRouter);
 app.use("/api/v1/users", userRouter);
 
 // Static files
-app.use(express.static(path.resolve(__dirname, "./public")));
+app.use(express.static(path.resolve(__dirname, "./Public")));
 
 // Catch-all route
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./public", "index.html"));
+  res.sendFile(path.resolve(__dirname, "./Public", "index.html"));
 });
 
 // Post route for data
