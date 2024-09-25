@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { authenticateUser } from "../middleware/authMiddleware.js";
+
 import {
   ValidateRegisterInput,
   ValidateLoginInput,
@@ -10,7 +10,7 @@ const router = Router();
 router.post("/register", ValidateRegisterInput, register);
 router.post("/login", ValidateLoginInput, login);
 router.get("/logout", Logout);
-router.get("/me", authenticateUser, (req, res) => {
+router.get("/me", (req, res) => {
   const { userId, role } = req.user;
   res.status(200).json({ userId, role });
 });
