@@ -6,7 +6,6 @@ import authRouter from "./Routers/authRouter.js";
 import errorHandlerMiddleware from "./Middleware/errorHandlerMiddleware.js";
 import { StatusCodes } from "http-status-codes";
 import gameRouter from "./Routers/gameRouter.js";
-import { authenticateUser } from "./middleware/authMiddleware.js";
 import userRouter from "./Routers/userRouter.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
@@ -34,8 +33,8 @@ app.post("/", (req, res) => {
   res.json({ message: "Data received", data: req.body });
 });
 app.use("/api/v1/auth", authRouter);
-app.use("/api/v1/games", authenticateUser, gameRouter);
-app.use("/api/v1/users", authenticateUser, userRouter);
+app.use("/api/v1/games", gameRouter);
+app.use("/api/v1/users", userRouter);
 
 // Static files
 app.use(express.static(path.resolve(__dirname, "./public")));
