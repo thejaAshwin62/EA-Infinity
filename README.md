@@ -14,8 +14,13 @@
 <a href="https://ea-infinity.onrender.com/"/><img src="https://i.ibb.co/tXWt7zk/eav.png" alt="Tournaments" border="0"></a>
 
 <h2>Optimized for Mobile</h2>
-<a href="https://ea-infinity.onrender.com/"/><img src="https://i.ibb.co/BzmBCDM/eam.png" alt="Mobile" border="0"></a>
-  <div>
+<div>
+  <a href="https://ea-infinity.onrender.com/">
+  <img src="https://i.ibb.co/BzmBCDM/eam.png" alt="Mobile" border="0" width="200" height="auto">
+</a>
+</div>
+<br>
+  <div >
     <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=47A248" alt="mongodb" />
 <img src="https://img.shields.io/badge/-Express_JS-black?style=for-the-badge&logoColor=white&logo=express&color=000000" alt="express.js" />
    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
@@ -35,7 +40,8 @@ My project esports_Arena, is a dynamic platform that allows users to book and pa
 The platform features an integrated admin panel where admins can manage tournaments, approve bookings, and oversee user registrations. With a seamless booking experience and real-time updates, esports_Arena provides a complete environment for competitive gaming enthusiasts.
 
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
+<div >
+   <a name="tech-stack">⚙️ Tech Stack</a>
 
 - MongoDB
 - ExpressJS
@@ -43,5 +49,6 @@ The platform features an integrated admin panel where admins can manage tourname
 - NodeJS
 - Material-UI
 - Daisy-UI
+</div>
 
 
