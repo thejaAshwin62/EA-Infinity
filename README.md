@@ -1,21 +1,21 @@
 <div align="center">
 
   <h2>Landing Page </h2>
-<a href="https://ea-infinity.onrender.com/"><a href="https://ea-infinity.onrender.com/"><img src="https://i.ibb.co/GxtJ5RL/ea.png" alt="EA" border="0"></a>
+<a href="https://ea-infinity.onrender.com/" target="_blank"><a href="https://ea-infinity.onrender.com/"><img src="https://i.ibb.co/GxtJ5RL/ea.png" alt="EA" border="0"></a>
   <br />
 
   <h2> Games Slide </h2>
-<a href="https://ea-infinity.onrender.com/"><img src="https://i.ibb.co/v16r1wJ/eaf.png" alt="Games" border="0"></a>
+<a href="https://ea-infinity.onrender.com/" target="_blank"><img src="https://i.ibb.co/v16r1wJ/eaf.png" alt="Games" border="0"></a>
 
 <h2> Admin Pannel </h2>
-<a href="https://ea-infinity.onrender.com/"/><img src="https://i.ibb.co/bBgNrBx/eaa.png" alt="Admin" border="0"></a>
+<a href="https://ea-infinity.onrender.com/" target="_blank"/><img src="https://i.ibb.co/bBgNrBx/eaa.png" alt="Admin" border="0"></a>
 
 <h2> Avaiable Touranaments </h2>
-<a href="https://ea-infinity.onrender.com/"/><img src="https://i.ibb.co/tXWt7zk/eav.png" alt="Tournaments" border="0"></a>
+<a href="https://ea-infinity.onrender.com/" target="_blank"/><img src="https://i.ibb.co/tXWt7zk/eav.png" alt="Tournaments" border="0"></a>
 
 <h2>Optimized for Mobile</h2>
 <div>
-  <a href="https://ea-infinity.onrender.com/">
+  <a href="https://ea-infinity.onrender.com/" target="_blank">
   <img src="https://i.ibb.co/BzmBCDM/eam.png" alt="Mobile" border="0" width="200" height="auto">
 </a>
 </div>
