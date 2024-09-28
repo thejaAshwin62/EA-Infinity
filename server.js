@@ -41,13 +41,6 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: "http://localhost:5173", // Update this for production
-    credentials: true,
-  })
-);
-
 // Routes
 app.post("/", (req, res) => {
   console.log(req.body);
