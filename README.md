@@ -1,5 +1,6 @@
 <div align="center">
-  <br />
+
+  <h2>Landing Page </h2>
 <a href="https://ea-infinity.onrender.com/"><a href="https://ea-infinity.onrender.com/"><img src="https://i.ibb.co/GxtJ5RL/ea.png" alt="EA" border="0"></a>
   <br />
 
@@ -9,6 +10,11 @@
 <h2> Admin Pannel </h2>
 <a href="https://ea-infinity.onrender.com/"/><img src="https://i.ibb.co/bBgNrBx/eaa.png" alt="Admin" border="0"></a>
 
+<h2> Avaiable Touranaments </h2>
+<a href="https://ea-infinity.onrender.com/"/><img src="https://i.ibb.co/tXWt7zk/eav.png" alt="Tournaments" border="0"></a>
+
+<h2>Optimized for Mobile</h2>
+<a href="https://ea-infinity.onrender.com/"/><img src="https://i.ibb.co/BzmBCDM/eam.png" alt="Mobile" border="0"></a>
   <div>
     <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=47A248" alt="mongodb" />
 <img src="https://img.shields.io/badge/-Express_JS-black?style=for-the-badge&logoColor=white&logo=express&color=000000" alt="express.js" />
